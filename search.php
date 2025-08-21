@@ -2,9 +2,7 @@
     include 'connect.php';
 
     if (isset($_GET['search'])) {
-
         $token = $_GET['search'];
-
         $query = "SELECT * FROM tbl WHERE username LIKE '%$token%' OR password LIKE '%$token%'";
     } else {
         $query = "SELECT * FROM tbl ORDER BY id DESC";
