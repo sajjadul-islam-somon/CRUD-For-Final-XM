@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>For Final</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <title>For Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <form action="upload.php" method="POST">
-            <h2>Simple Form</h2>
-            <label for="uname">Username :</label>
-            <input type="text" id="uname" name="uname" reqired>
+<body>
+    <!-- Simple Navbar -->
+    <nav>
+        <div class="left-part">
+            <a href="index.php">For Final</a>
+        </div>
 
-            <br><br>
+        <div class="middle-part">
+            <a href="index.php">Home Page 🏠</a>
+            <a href="fetch.php">Show All Data 🈸</a>
+            <a href="search.php">Search Data 🔎</a>
+        </div>
 
-            <label for="pass">Password :</label>
-            <input type="password" id="pass" name="pass" reqired>
+        <div class="right-part">
+            <h4>😃Thank You</h4>
+        </div>
+    </nav>
 
-            <br><br>
 
-            <button type="submit">Submit</button>
-        </form>
+    <!-- Simple Input Form     -->
+    <form action="upload.php" method="POST">
+        <h3>Input Form</h3>
+        <br>
 
+        <label for="uname">Username :</label>
+        <input type="text" id="uname" name="uname" reqired>
         <br><br>
 
-        <a href="fetch.php">Show All Data (Fetch) 🈸</a>
-
+        <label for="pass">Password :</label>
+        <input type="password" id="pass" name="pass" reqired>
         <br><br>
 
-        <a href="search.php">Search Any Data (Search) 🔎</a>
-    </body>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+</body>
 </html>
