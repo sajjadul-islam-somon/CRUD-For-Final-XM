@@ -13,20 +13,6 @@ $run = mysqli_query($con, $query);
 <head>
     <title>For Final</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Table border style part -->
-    <style>
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            border: 1px solid black;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -48,9 +34,8 @@ $run = mysqli_query($con, $query);
     </nav>
 
 
-
-
-
+    <h3>Showing All Data In Tabular Format</h3>
+    <hr><br>
     <?php
     if (mysqli_num_rows($run) > 0) {            // Check if table has more than 0 rows
     ?>
@@ -77,11 +62,5 @@ $run = mysqli_query($con, $query);
         echo "Opps, No Data Found!";            // If table has no rows Show this message
     }
     ?>
-
-    <br><br>
-
-    <a href="index.php">Go Back 🔙</a>
-
 </body>
-
 </html>

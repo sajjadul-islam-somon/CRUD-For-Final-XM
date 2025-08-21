@@ -7,6 +7,11 @@
 
 a {
     text-decoration: none;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
 }
 
 nav {
@@ -14,23 +19,33 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 20px 5px 20px;  /* top right bottom left */
+    margin-bottom: 10px;
 }
 
-.left-part a{
+.left-part a {
     font-size: 24px;
     font-weight: 700;
 }
 
-.middle-part a{
+.middle-part a {
     margin: 0 20px;
     font-size: 16px;
     font-weight: 600;
 }
 
 form {
-    padding: 30px;
+    width: fit-content;
+    padding: 10px 40px;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1px solid black;
 }

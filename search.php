@@ -18,18 +18,6 @@ $run = mysqli_query($con, $query);
 <head>
     <title>For Final</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Table border style part -->
-    <style>
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid black;
-        }
-    </style>
 </head>
 
 <body>
@@ -57,7 +45,7 @@ $run = mysqli_query($con, $query);
         <button type="submit">🔎</button>
     </form>
 
-    <hr>
+    <br>
 
     <?php
     if (mysqli_num_rows($run) > 0) {            // Check if table has more than 0 rows
